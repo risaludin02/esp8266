@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESP32 MQTT Dashboard</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <link rel="stylesheet" href="style.css"> 
+    
+</head>
+
+<body>
+  <h2>WEB RISAL MANAGE BATRE (BLOK REVISI)</h2>
+
+  <div class="card">
+    <strong>Koneksi</strong><br>
+    Broker: <code>wss://broker.hivemq.com:8884/mqtt</code><br>
+    Client ID: <span id="cid">...</span><br>
+    Status: <span id="status">disconnected</span>
+  </div>
+
+  <div class="card">
+    <strong>Kontrol (sesuai Blynk)</strong><br>
+    <button id="pb1" class="on">PB1</button>
+    <button id="pb4" class="off">PB4</button>
+    <button id="pb2" class="neutral">PB2</button>
+    <button id="pb3" class="neutral">PB3</button>
+  </div>
+
+  <div class="card">
+    <strong>Status Sistem</strong>
+    <div class="grid">
+      <div class="statusBox" id="plnStatus">PLN: --</div>
+      <div class="statusBox" id="dcStatus">DISCHARGE: --</div>
+      <div class="statusBox" id="chStatus">CHARGER: --</div>
+      <div class="statusBox" id="veVolt">VE: -- V</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Level Tiap Baterai (Volt)</strong>
+    <div class="battery-grid">
+      <div class="batteryBox" id="voltA">VA: -- V</div>
+      <div class="batteryBox" id="voltB">VB: -- V</div>
+      <div class="batteryBox" id="voltC">VBat: -- V</div>
+      <div class="batteryBox" id="voltD">VD: -- V</div>
+      <div class="batteryBox" id="voltE">PV: -- V</div>
+    </div>
+  </div>
+
+  <div class="card">  
+    <strong>Data Telemetri</strong>
+    <div class="tele" id="tele">Menunggu data...</div>
+  </div>
+
+<script src="data.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      margin: 20px;
+    }
+    h2 { text-align: center; margin-bottom: 20px; }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 8px 14px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover { opacity: 0.85; }
+    .on { background: #2ecc71; color: #fff; }
+    .off { background: #e74c3c; color: #fff; }
+    .neutral { background: #3498db; color: #fff; }
+    .tele {
+      font-family: monospace;
+      background: #fafafa;
+      border-radius: 8px;
+      padding: 10px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+    #status { font-weight: bold; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      text-align: center;
+    }
+    .statusBox {
+      background: #eef3f8;
+      border-radius: 8px;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .battery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+      gap: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .batteryBox {
+      background: #eef3f8;
+      border-radius: 8px;
+      padding: 8px;
+      font-weight: bold;
+    }
+  
